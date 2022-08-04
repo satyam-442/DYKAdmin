@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "398825482190",
+    "project_id": "dyk---admin",
+    "storage_bucket": "dyk---admin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398825482190:android:75bdc1ba6659045a5e2d9f",
+        "android_client_info": {
+          "package_name": "com.example.dyk_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398825482190-ojt9n2nqj5osng7avesn46mgros7jgr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZYMmEM9uphWJ9_uSTp2YG-Nbv9FRQUfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398825482190-ojt9n2nqj5osng7avesn46mgros7jgr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

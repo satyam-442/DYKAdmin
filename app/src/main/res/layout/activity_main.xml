@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:src="@drawable/logout"
+            android:padding="5dp"
+            android:onClick="logoutAdmin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/primaryDark"
+                android:onClick="addFacts">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Facts"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contextClickable="true"
+                    android:textColor="@color/primaryLight"
+                    android:onClick="addFacts"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/primaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Facts"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="goToViewFacts"
+                    android:textColor="@color/primaryLight"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:onClick="addBlogs"
+                android:backgroundTint="@color/primaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Blogs"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="addBlogs"
+                    android:textColor="@color/primaryLight"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/primaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Blogs"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textColor="@color/primaryLight"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:onClick="addQuotes"
+                android:backgroundTint="@color/primaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Quotes"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="addQuotes"
+                    android:textColor="@color/primaryLight"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/primaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Quotes"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textColor="@color/primaryLight"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:onClick="sendNotification"
+                android:backgroundTint="@color/primaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Notification"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="sendNotification"
+                    android:textColor="@color/primaryLight"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:onClick="viewUsers"
+                android:backgroundTint="@color/primaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Users"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="viewUsers"
+                    android:textColor="@color/primaryLight"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:onClick="sendNotification"
+                android:backgroundTint="@color/primaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Quiz"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="addQuiz"
+                    android:textColor="@color/primaryLight"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:onClick="viewUsers"
+                android:backgroundTint="@color/primaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Quiz"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="viewQuiz"
+                    android:textColor="@color/primaryLight"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

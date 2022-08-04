@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="12dp"
+    android:background="@color/primaryLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/baloo"
+            android:paddingStart="15dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="8dp"
+            android:text="Do you know?"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:background="@color/secondaryDark"
+                android:maxHeight="@android:dimen/thumbnail_height"
+                app:layout_constraintTop_toTopOf="@+id/factContent"
+                app:layout_constraintBottom_toBottomOf="@id/factContent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/factContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:maxHeight="@android:dimen/thumbnail_height"
+                android:background="@color/secondaryDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/factContent"
+                app:layout_constraintBottom_toBottomOf="@id/factContent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--<TextView
+            android:id="@+id/factCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/factTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_sans"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/factDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_sans"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/factSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_sans"
+                android:textSize="15sp"
+                android:text="Save"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/save"/>
+
+            <TextView
+                android:id="@+id/factShare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_sans"
+                android:textSize="15sp"
+                android:text="Share"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/share" />
+        </LinearLayout>-->
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

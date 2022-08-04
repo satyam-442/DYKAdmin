@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".AddQuotesActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/quoteTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Quote Here"
+            android:gravity="top|left"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:lines="5"
+            android:textSize="16sp"
+            android:scrollHorizontally="false"
+            android:inputType="textMultiLine"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/quoteWrittenBy"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Written by"
+            android:gravity="top|left"
+            android:textSize="16sp"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="Select Category:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <Spinner
+            android:id="@+id/selectCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_bg" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selectedCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"/>
+
+    <Button
+        android:id="@+id/addQuoteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        android:text="Add Quote"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:backgroundTint="@color/primaryDark"
+        android:textColor="@color/primaryLight"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"/>
+
+</LinearLayout>
